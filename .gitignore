@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# .NET / WinUI
+**/bin/
+**/obj/
+**/AppPackages/
+**/*.pfx
+**/*.cer
+
+# Local configuration and secrets
+.env
+.env.*
+*.local.json
+wake-agent.local.ps1
+.vs/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
