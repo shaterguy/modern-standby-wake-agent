@@ -20,3 +20,6 @@ wake-agent.local.ps1
 # OS
 Thumbs.db
 .DS_Store
+
+# Generated legacy template metadata
+windows/Properties/
