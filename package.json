@@ -1,6 +1,6 @@
 {
   "name": "modern-standby-wake-agent",
-  "version": "0.1.0-dev2",
+  "version": "0.1.0-dev3",
   "private": true,
   "type": "module",
   "scripts": {

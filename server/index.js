@@ -8,10 +8,14 @@ function required(name) {
 
 const service = createWakeService({
   deviceId: required("DEVICE_ID"),
-  deviceSecret: required("DEVICE_SECRET"),
   apiToken: required("WAKE_API_TOKEN"),
-  httpPort: Number(process.env.PORT ?? 3000)
+  wolMac: required("WOL_MAC"),
+  wolHost: required("WOL_HOST"),
+  wolPort: Number(required("WOL_PORT")),
+  wolRepeat: Number(process.env.WOL_REPEAT ?? 3),
+  httpPort: Number(process.env.PORT ?? 3000),
+  allowDelayedWake: process.env.ALLOW_DELAYED_WAKE === "1",
 });
 
 const ports = await service.listen();
-console.log(`wake service listening: http=${ports.httpPort}`);
+console.log(`wake service listening: http=${ports.httpPort} mode=udp-magic-packet`);

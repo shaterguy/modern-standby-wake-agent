@@ -13,6 +13,7 @@ npm-debug.log*
 .env
 .env.*
 *.local.json
+.local/
 wake-agent.local.ps1
 .vs/
 .idea/
