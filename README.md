@@ -21,5 +21,5 @@ npm test
 dotnet build .\windows\WakeAgent.Windows.csproj -c Release
 ```
 
-현재 개발 버전은 `v0.1.0-dev1`입니다.
+현재 개발 버전은 `v0.1.0-dev2`입니다.
 실제 원격 기상에는 인터넷에서 접근 가능한 Node.js 서버와 Windows `WakeToRun` 예약 작업 설정이 필요합니다.
